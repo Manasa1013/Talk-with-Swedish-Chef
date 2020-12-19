@@ -1,2 +1,4 @@
-# Speak like Dolan
- This app lets you speak like duck in "The Uncle Dolan Show" 
+# Talk with Swedish Chef
+ This webapp lets you know how Swedish Chef character speaks.
+ 
+Built with HTML,CSS,Javascript.
