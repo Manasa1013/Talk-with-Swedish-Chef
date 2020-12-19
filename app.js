@@ -5,6 +5,7 @@ var infoDiv = document.querySelector("#info-div");
 //infoDiv is to print error messages
 
 function constructURL(text){
+    
     return "https://api.funtranslations.com/translate/chef.json" +"?text=" +text;
 }
 
@@ -18,7 +19,7 @@ function doFetch(text){
 
     fetch(constructURL(text))
     .then(response => response.json())
-    .then(json => textOutput.innerText = json.contents.text+" "+json.contents.translation)
+    .then(json => textOutput.innerText = json.contents.translated)
     .catch(errorHandler)
 }
 
@@ -31,7 +32,7 @@ function errorHandler(error){
 function btnClickHandler(){
     let finalInput = textInput.value;
     if(finalInput === ""){
-        infoDiv.innerText = "Write something in English"
+        infoDiv.innerText = "Write something in the box"
     }
     doFetch(finalInput);
     console.log(textInput.value);
