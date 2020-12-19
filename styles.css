@@ -4,6 +4,8 @@
     --github-black : #24292E;
     --yours-peach :  #ec417a;
     --peach-hover :  rgba(243, 50, 114, 0.726);
+    --nav-pink :  #654062;
+    --nav-pinkhover :#654062bd;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -41,7 +43,7 @@ textarea{
 }
 nav{
     background-color: var(--yours-peach);
-    background-color: #654062;
+    background-color:var(--nav-pink);
     padding: 1rem 3rem;
     font-size: x-large;
     font-family: 'Courier New', Courier, monospace;
@@ -51,37 +53,93 @@ nav{
 }
 #button-translate{
     /* background-color: var(--yours-peach); */
-    background-color: #654062;
+    background-color: var(--nav-pink);
     color: var(--yours-green);
     text-decoration: none;
     padding: 1em 2em;
-
+    margin: 1rem;
+    margin-bottom: 0.5rem;
     border: 2px solid var(--green-button);
-    border-radius: 5px;
+    border-radius: 0.3rem;
     font-weight: bold;
-    box-sizing: border-box;
+    display: block;
 }
 #button-translate:hover{
     color : #ffffff;
-    background-color: var(--peach-hover);
+    background-color: var(--nav-pinkhover);
 }
 
 .div{
     text-align: left;
 }
+.div .div-image{
+    padding-bottom: 0.1rem;
+}
 .noalign{
-    max-width: 700px;
-    margin: auto;
+    font-weight: 500;
+    font-size: medium;
+    max-width: 600px;   
+    /* margin: auto; */
 }
 .floatRight{
     float: justify;
-    margin: 10px 10px 32px 32px;
+    margin: 0.8rem;
     border-radius: 50%;
     max-width: 100px;
 }
 
 /* footer items */
 
-footer{
+.noalign{
+    /* background-color: var(--nav-pink); */
+    text-align: center;
+}
+.list-item-inline{
+    display: inline;
+    padding : 0rem 0.5rem;
+    /* color : whitesmoke;    */
+}
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    box-sizing: border-box;
+}
+.footer{
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 9vh;
+    text-align: center;
+    color: var(--yours-green);
+    padding: 1.5rem;
+    background-color: var(--nav-pink);
+}
+.footer-header{
+    color: var(--nav-pink);
+    font-weight: bold;
+    color: var(--yours-green);
+    padding: 0.2rem;
+    text-align: left;
+}
+.footer .social-links{
+    display: inline;
+    list-style: none;
+}
 
+.footer .social-links .list-non-bullet{
+    list-style : none;
+    /* margin-top: 3rem ; */
+    padding-inline-start: 0rem;
+    
+}
+.footer .social-links .link:hover{
+    color: gray;
+    transition: all 0.3s ease-in-out;
+}
+.footer .footer-copy{
+    font-weight: 450;
+    font-size: small;
+    color: rgb(170, 170, 170);
+    padding: 1rem 3rem 0rem 0rem;
 }
