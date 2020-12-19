@@ -24,7 +24,7 @@ function doFetch(text){
 }
 
 function errorHandler(error){
-    infoDiv.innerText="Server is too busy,talk with Swedish chef later(●'◡'●)"
+    infoDiv.innerText="Oops!!Server is too busy,talk with Swedish chef later(●'◡'●)"
     
     textOutput.innerText = ""
 }
